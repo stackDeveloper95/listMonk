@@ -2,4 +2,4 @@ FROM listmonk/listmonk:latest
 
 EXPOSE 9000
 
-CMD ["./listmonk"]
+CMD ["sh", "-c", "./listmonk --install && ./listmonk"]
